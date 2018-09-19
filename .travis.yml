@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t javieronsurbe/docker-react -f Dockerfile .
+  - docker build -t javieronsurbe/docker-react -f Dockerfile.dev .
 
 script:
   - docker run javieronsurbe/docker-react npm run test -- --coverage
